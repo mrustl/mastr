@@ -1,5 +1,5 @@
 ---
-title: "PV Bberlin"
+title: "PV Berlin"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{PV Berlin}
@@ -18,13 +18,15 @@ knitr::opts_chunk$set(
 library(mastr)
 stromerzeuger_pv_berlin <- mastr::read_mastr()
 
-stromerzeuger_pv_berlin %>%
+g <- stromerzeuger_pv_berlin %>%
   dplyr::count(year) %>%
   ggplot2::ggplot(ggplot2::aes(x = year, y = n)) +
   ggplot2::geom_line() +
   ggplot2::labs(x = "Year", 
                 y = "Number of PVs per year (grouped by 'Inbetriebnamedatum')") +
   ggplot2::theme_bw()
+
+plotly::ggplotly(g)
 
 
 probs <- seq(0,1,0.005)
