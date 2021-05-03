@@ -13,8 +13,8 @@ Authors@R:
 Description: R Package for Visualising Data from
     Marktstammdatenregister (for Berlin).
 License: MIT + file LICENSE
-URL: https://github.com/KWB-R/mastr
-BugReports: https://github.com/KWB-R/mastr/issues
+URL: https://github.com/mrustl/mastr
+BugReports: https://github.com/mrustl/mastr/issues
 Imports: 
     dplyr,
     lubridate,
