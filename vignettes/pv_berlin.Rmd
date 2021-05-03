@@ -1,0 +1,36 @@
+---
+title: "PV Bberlin"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{PV Berlin}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mastr)
+stromerzeuger_pv_berlin <- mastr::read_mastr()
+
+stromerzeuger_pv_berlin %>%
+  dplyr::count(year) %>%
+  ggplot2::ggplot(ggplot2::aes(x = year, y = n)) +
+  ggplot2::geom_line()
+
+
+stromerzeuger_pv_berlin %>%
+  dplyr::arrange(bruttoleistung_der_einheit) %>%
+  ggplot2::ggplot(ggplot2::aes(x = year, y = n)) +
+  ggplot2::geom_line()
+
+probs <- seq(0,1,0.005)
+quantile(stromerzeuger_pv_berlin$bruttoleistung_der_einheit,probs = probs)
+
+
+```

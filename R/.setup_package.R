@@ -14,4 +14,4 @@ kwb.pkgbuild::use_pkg(
   user = "mrustl"
 )
 
-kwb.pkgbuild::create_empty_branch_ghpages("mast")
+kwb.pkgbuild::create_empty_branch_ghpages("mastr")
