@@ -15,18 +15,21 @@ Description: R Package for Visualising Data from
 License: MIT + file LICENSE
 URL: https://github.com/KWB-R/mastr
 BugReports: https://github.com/KWB-R/mastr/issues
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+Imports: 
+    dplyr,
+    lubridate,
+    janitor,
+    magrittr,
+    readr,
+    rlang
 Suggests: 
     covr,
     gglot2,
     knitr,
     rmarkdown
-Imports: 
-    dplyr,
-    janitor,
-    magrittr,
-    readr
-VignetteBuilder: knitr
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
