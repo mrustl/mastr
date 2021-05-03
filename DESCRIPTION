@@ -1,0 +1,23 @@
+Package: mastr
+Title: R Package for Visualising Data from
+    Marktstammdatenregister (for Berlin)
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Michael",
+             family = "Rustler",
+             role = c("aut", "cre"),
+             email = "michael.rustler@kompetenz-wasser.de",
+             comment = c(ORCID = "0000-0003-0647-7726")),
+      person(given = "Michael Rustler",
+             role = "cph"))
+Description: R Package for Visualising Data from
+    Marktstammdatenregister (for Berlin).
+License: MIT + file LICENSE
+URL: https://github.com/KWB-R/mastr
+BugReports: https://github.com/KWB-R/mastr/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    covr
