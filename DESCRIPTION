@@ -24,7 +24,7 @@ Imports:
     rlang
 Suggests: 
     covr,
-    gglot2,
+    ggplot2,
     knitr,
     rmarkdown
 VignetteBuilder: 
