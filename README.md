@@ -25,7 +25,7 @@ if (! require("remotes")) {
   install.packages("remotes", repos = "https://cloud.r-project.org")
 }
 
-# Install KWB package 'mastr' from GitHub
+# Install package 'mastr' from GitHub
 remotes::install_github("mrustl/mastr")
 ```
 
