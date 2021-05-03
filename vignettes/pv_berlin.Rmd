@@ -28,9 +28,12 @@ g <- stromerzeuger_pv_berlin %>%
 
 plotly::ggplotly(g)
 
+```
 
-probs <- seq(0,1,0.005)
-quantile(stromerzeuger_pv_berlin$bruttoleistung_der_einheit,probs = probs)
+```{r probs}
+### Probability distribution (kWp / PV system installed in Berlin)
 
+quantile(stromerzeuger_pv_berlin$bruttoleistung_der_einheit, 
+         probs = seq(0,1,0.005))
 
 ```
